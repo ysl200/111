@@ -1,0 +1,42 @@
+/* 下面是底部盒子样式 */
+
+/* 底部大盒子样式 宽度充满浏览器 */
+.footer {
+	/* 高度为 415 由于 内边距会撑大盒子因此 这里设置 385 高度 + 30 内边距 */
+	height: 350px;
+	padding-top: 30px;
+	/* 大盒子背景白色 */
+	background-color: #fff;
+}
+
+
+
+/* 整个链接模块盒子 右浮动 */
+.links {
+	float: left;
+}
+
+/* dl 列表设置在 链接 盒子中左浮动 */
+.links dl {
+	float: left;
+	/* 距离左侧 100 像素 */
+	margin-left: 300px;
+}
+
+/* 列表项 标题 样式 */
+.links dt {
+	height: 35px;
+	font-size: 16px;
+	color: #333;
+}
+
+/* 列表项 链接样式 */
+.links dd a {
+	font-size: 12px;
+	color: #333;
+}
+
+/* 鼠标经过的样式 */
+.links dd a:hover {
+	color: #004aff;
+}

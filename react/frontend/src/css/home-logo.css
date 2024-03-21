@@ -1,0 +1,9 @@
+.home-logo{
+    line-height: 55px;
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}

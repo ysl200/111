@@ -1,0 +1,203 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": 123456,
+      "roleState": true,
+      "default": true,
+      "roleId": 1
+    },
+    {
+      "username": "张三",
+      "password": "123",
+      "roleState": true,
+      "default": false,
+      "roleId": 2,
+      "id": 2
+    },
+    {
+      "username": "李四",
+      "password": "123",
+      "roleState": true,
+      "default": false,   
+      "roleId": 2,
+      "id": 3
+    },
+    {
+      "username": "王五",
+      "password": "123",
+      "roleState": true,
+      "default": false,
+      "roleId": 1,
+      "id": 4
+    },
+    {
+      "username": "赵六",
+      "password": "123",
+      "roleState": true,
+      "default": false,
+      "roleId": 3,
+      "id": 5
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "roleName": "超级管理员",
+      "roleType": 1,
+      "rights": [
+        "/center/publishFc",
+        "/center/friendCricle",
+        "/center/auditFc",
+        "/center/auditFcOk",
+        "/center/line",
+        "/center/rightManage",
+        "/center/userManage",
+        "/center/courseList",
+        "/center/collection",
+        "/center/creditBank",
+        "/center/credit"
+      ]
+    },
+    {
+      "id": 2,
+      "roleName": "老师",
+      "roleType": 2,
+      "rights": [
+        "/center/publishFc",
+        "/center/friendCricle",
+        "/center/line",
+        "/center/courseList",
+        "/center/collection",
+        "/center/creditBank",
+        "/center/credit"
+      ]
+    },
+    {
+      "id": 3,
+      "roleName": "学生",
+      "roleType": 3,
+      "rights": [
+        "/center/publishFc",
+        "/center/friendCricle",
+        "/center/line",
+        "/center/courseList",
+        "/center/collection",
+        "/center/creditBank",
+        "/center/credit"
+      ]
+    }
+  ],
+  "rights": [
+    {
+      "id": 1,
+      "title": "我的课程",
+      "key": "/center/courseList",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 2,
+      "title": "我的收藏",
+      "key": "/center/collection",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 3,
+      "title": "学分银行",
+      "key": "/center/creditBank",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 4,
+      "title": "我的证书",
+      "key": "/center/credit",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 5,
+      "title": "朋友圈",
+      "key": "/center/friendCricle",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 6,
+      "title": "用户管理",
+      "key": "/center/userManage",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 7,
+      "title": "个人信息",
+      "key": "/center/myMessage",
+      "pagepermisson": 1,
+      "grade": 1
+    }
+  ],
+  "children": [
+    {
+      "id": 1,
+      "title": "发布朋友圈",
+      "rightId": 5,
+      "key": "/center/friendCricle/publishFc",
+      "grade": 2,
+      "pagepermisson" :1
+     
+    },
+    {
+      "id": 2,
+      "title": "查看朋友圈",
+      "rightId": 5,
+      "key": "/center/friendCricle/friendCricle",
+      "grade": 2,
+      "pagepermisson" :1
+    },
+    {
+      "id": 3,
+      "title": "审核朋友圈",
+      "rightId": 5,
+      "key": "/center/friendCricle/friendCricle/auditFc",
+      "grade": 2,
+      "pagepermisson" :1
+    },
+    {
+      "id": 4,
+      "title": "已审核",
+      "rightId": 5,
+      "key": "/friendCricle/auditFcOk",
+      "grade": 2,
+      "pagepermisson" :1
+    },
+    {
+      "id": 5,
+      "title": "审核未通过",
+      "rightId": 5,
+      "key": "/center/friendCricle/line",
+      "grade": 2,
+      "pagepermisson" :1
+    },
+    {
+      "id": 6,
+      "title": "权限管理",
+      "rightId": 6,
+      "key": "/center/permissionManage/rightManage",
+      "grade": 2,
+      "pagepermisson" :1
+    },
+    {
+      "id": 7,
+      "title": "用户管理",
+      "rightId": 6,
+      "key": "/center/permissionManage/userManage",
+      "grade": 2,
+      "pagepermisson" :1
+    }
+  ]
+  
+}
